@@ -4,6 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = [
   {
+    mode: 'development',
     entry: [
       './src/quill.mention.js',
     ],
@@ -33,6 +34,7 @@ module.exports = [
         {
           test: /\.js$/,
           exclude: /node_modules/,
+          include: /node_modules\/quill/,
           use: {
             loader: 'babel-loader',
           },
