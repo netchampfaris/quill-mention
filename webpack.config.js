@@ -34,7 +34,6 @@ module.exports = [
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          include: /node_modules\/quill/,
           use: {
             loader: 'babel-loader',
           },
